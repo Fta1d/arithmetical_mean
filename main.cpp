@@ -95,6 +95,7 @@ int main(void) {
             int_arr = new int[size];
             intArrInit(int_arr);
             std::cout << "Arithmetical mean of int array: " << mTool->intArrMean(int_arr) << std::endl;
+            delete[] int_arr;
             break;
         }
 
@@ -105,6 +106,7 @@ int main(void) {
             float_arr = new float[size];
             floatArrInit(float_arr);
             std::cout << "Arithmetical mean of float array: " << mTool->floatArrMean(float_arr) << std::endl;
+            delete[] float_arr;
             break;
         }
 
@@ -115,6 +117,7 @@ int main(void) {
             double_arr = new double[size];
             doubleArrInit(double_arr);
             std::cout << "Arithmetical mean of double array: " << mTool->doubleArrMean(double_arr) << std::endl;
+            delete[] double_arr;
             break;
         }
 
