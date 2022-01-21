@@ -16,8 +16,14 @@ int main(void) {
 
     std::cout << "Enter the size of the array: ";
     std::cin >> size;
+    std::cout << std::endl;
 
-    //overload_version(size, type);
+    std::cout << "Overload version:" << std::endl;
+    overload_version(size, type);
+
+    std::cout << std::endl;
+
+    std::cout << "Template version:" << std::endl;
     template_version(size, type);
 
     return 0;
